@@ -21,6 +21,21 @@
   margin: .2em 5%;
 }
 
+#article-export {
+  width: 80%;
+  background: #23292f;
+  padding: 10px 20px;
+  margin: 25px 0;
+}
+#article-json {
+  background: #23292f;
+  color: #f3f9ff;
+  border: none;
+  width: 100%;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-size: .8em;
+}
+
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;

@@ -110,12 +110,17 @@ articleView.create = function() {
   // TODO: Use our interface to the Handblebars template to put this new article into the DOM:
   $('#articles').append($newArticle.toHtml());
 
-  // TODO (stretch): Activate the highlighting of any code blocks; look at the documentation for hljs to see how to do this by placing a callback function in the .each():
-  $('pre code').each();
+  
 
   // TODO: Show our export field, and export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
   $('#article-export').show();
-  $('#article-json').val(JSON.stringify($newArticle));
+  var newJSON = '<pre><code>' + JSON.stringify($newArticle) + '</pre></code>';
+  $('#article-json').html(newJSON);
+
+  // TODO (stretch): Activate the highlighting of any code blocks; look at the documentation for hljs to see how to do this by placing a callback function in the .each():
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
 };
 
 
