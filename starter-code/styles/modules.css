@@ -54,6 +54,20 @@
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
 
+fieldset {
+  border: none;
+}
+
+fieldset > input, fieldset > textarea {
+  padding: 25px 0;
+  color: black;
+}
+
+ placeholder {
+  color: black;
+
+}
+
 
 @media only screen and (min-width: 640px) {
   .icon-menu {
