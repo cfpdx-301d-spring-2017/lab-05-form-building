@@ -53,7 +53,15 @@
 }
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
+#article-export {
+  border: solid green 2px;
+  margin-top: 20px;
+  
+}
 
+#article-json {
+  width: 90%;
+}
 
 @media only screen and (min-width: 640px) {
   .icon-menu {
@@ -78,3 +86,26 @@
   }
 
 }
+
+footer {
+  margin-top: 40px;
+}
+
+#article-body {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+#published-on {
+width: 20px;
+
+
+}
+
+#published-on, #label {
+  display: inline;
+  margin-left: 10px;
+
+}
+
+
